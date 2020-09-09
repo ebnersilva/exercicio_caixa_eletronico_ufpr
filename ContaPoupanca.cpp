@@ -17,7 +17,11 @@ ContaPoupanca::ContaPoupanca(char nome[30], int numero, float saldo, char aniver
 };
 
 void ContaPoupanca::extrato() {
-	cout << "EXTRATO NA CONTA POUPANÇA" << endl;
+	cout << "########   EXTRATO CONTA POUPANÇA  ############"<< endl;
 	Conta::extrato();
-	cout << "Data de aniversário: " << this->aniversario << endl;
+	cout << "Data de aniversário: " << this->aniversario << endl;	
+	cout << endl;
+	cout << "##############   FIM EXTRATO  #################"<< endl;
+	system("pause");
+	system("cls");
 };

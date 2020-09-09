@@ -16,12 +16,19 @@ Conta::Conta(char nome[30], int numero, float saldo){
 }
 
 void Conta::depositar(int valor) {
-	cout << "DEPÓSITO DE: " << valor << "EFETUADO" << endl;
+	cout << "###############################################"<< endl;
+	cout << "DEPÓSITO DE R$: " << valor << " EFETUADO" << endl;
+	
 	this->saldo = saldo + valor;
+	
+	cout << endl;
+	cout << "###############################################"<< endl;
+	system("pause");
+	system("cls");
 }
 
 void Conta::extrato() {
 	cout << "Nome: " << this->nome << endl;	
 	cout << "Número: " << this->numero << endl;	
-	cout << "Saldo: " << this->saldo << endl;	
+	cout << "Saldo: " << this->saldo << endl;
 }
